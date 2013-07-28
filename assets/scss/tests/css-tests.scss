@@ -1,0 +1,102 @@
+//
+// Bootstrap CSS Tests
+//
+
+// Core variables and mixins
+@import "lib/variables"; // Modify this for custom colors, font-sizes, etc
+@import "lib/bootstrap-mixins";
+
+body {
+	background-image: none;
+}
+
+/* Space out subhead */
+.subhead {
+	margin-bottom: 36px;
+}
+
+.type-test {
+	margin-bottom: 20px;
+	padding: 0 20px 20px;
+	background: image-url('bootstrap/grid-baseline-20px.png');
+}
+
+.type-test h1,
+.type-test h2,
+.type-test h3,
+.type-test h4,
+.type-test h5,
+.type-test h6 {
+	background-color: rgba(255,0,0,.2);
+}
+
+
+/* colgroup tests */
+.col1 {
+	background-color: rgba(255,0,0,.1);
+}
+.col2 {
+	background-color: rgba(0,255,0,.1);
+}
+.col3 {
+	background-color: rgba(0,0,255,.1);
+}
+
+
+/* Fluid row inputs */
+#rowInputs .row > [class*=span],
+#fluidRowInputs .row-fluid > [class*=span] {
+	background-color: rgba(255,0,0,.1);
+}
+
+
+/* Fluid grid */
+.fluid-grid {
+	margin-bottom: 45px;
+}
+.fluid-grid .row {
+	height: 40px;
+	padding-top: 10px;
+	margin-top: 10px;
+	color: #ddd;
+	text-align: center;
+}
+.fluid-grid .span1 {
+	background-color: #999;
+}
+
+
+/* Gradients */
+
+[class^="gradient-"] {
+	width: 100%;
+	height: 400px;
+	margin: 20px 0;
+	-webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	      border-radius: 5px;
+}
+
+.gradient-horizontal {
+	@include gradient-horizontal( #333333, #CCCCCC );
+}
+
+.gradient-vertical {
+	@include gradient-vertical( #333333, #CCCCCC );
+}
+
+.gradient-directional {
+	@include gradient-directional( #333333, #CCCCCC, 45deg );
+}
+
+.gradient-vertical-three {
+	@include gradient-vertical-three-colors( #00b3ee, #7a43b6, 50%, #c3325f );
+}
+
+.gradient-radial {
+	@include gradient-radial( #333333, #CCCCCC );
+}
+
+.gradient-striped {
+	@include gradient-striped( #333, 45deg );
+}

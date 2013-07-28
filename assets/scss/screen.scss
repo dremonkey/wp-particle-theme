@@ -1,0 +1,15 @@
+// Import Library Stuff
+// --------------------------------------------
+@import "lib/variables"; // Modify this for custom colors, font-sizes, etc
+@import "lib/bootstrap-mixins"; // Bootstrap Mixins
+
+// Import Site Partials
+// --------------------------------------------
+@import "partials/header";
+@import "partials/footer";
+@import "partials/maintenance";
+
+.assistive-text, .screen-reader-text {
+	@include hide-text();
+	position: absolute;
+}

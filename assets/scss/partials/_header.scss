@@ -1,0 +1,16 @@
+//
+// Header Styles
+//
+
+
+// Fixed Navbar Styles
+body.admin-bar .navbar-fixed-top {
+	top: 28px; // make space for the adminbar
+}
+
+// Static Navbar Styles
+.navbar-static-top {
+	position: relative;
+	z-index: 100;
+	margin-bottom: 0;
+}

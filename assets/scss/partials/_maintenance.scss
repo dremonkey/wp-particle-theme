@@ -1,0 +1,56 @@
+//
+// Maintenace Page Styles
+//
+
+#maintenance {
+	position: relative;
+	background:#25adf0;
+    z-index:-5;
+    color: white;
+
+	p {
+		font-size: 24px;
+		line-height: 1.3em;
+	}
+
+	#site-url {
+		color: white;
+		position: relative;
+		z-index:10;
+	}
+
+	.lines .container {
+		position: relative;
+		height: 100%;
+	}
+
+
+	#maintenance-title {
+		position: absolute;
+		bottom: 50px;
+		color: white;
+		font-size: 120px;
+		line-height: 1em;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: -6px;
+		@include opacity(.7)
+	}
+
+
+	// blue grid background http://forrst.com/posts/CSS3_Blue_Grid_Background-wlW
+	.lines {
+		height:100%;
+	    width:100%;
+	    opacity:0.14;
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    z-index:-4;
+		background-size: 20px 20px;    
+	    background-image: -webkit-repeating-linear-gradient(0deg, #176991, #176991 1px, transparent 1px, transparent 7px),-webkit-repeating-linear-gradient(-90deg, #176991, #176991 1px, transparent 1px, transparent 7px);
+	    background-image: -moz-repeating-linear-gradient(0deg, #176991, #176991 1px, transparent 1px, transparent 7px),-moz-repeating-linear-gradient(-90deg, #176991, #176991 1px, transparent 1px, transparent 7px);
+	    background-image: -o-repeating-linear-gradient(0deg, #176991, #176991 1px, transparent 1px, transparent 7px),-o-repeating-linear-gradient(-90deg, #176991, #176991 1px, transparent 1px, transparent 7px);
+	    background-image:repeating-linear-gradient(0deg, #176991, #176991 1px, transparent 1px, transparent 7px),repeating-linear-gradient(-90deg, #176991, #176991 1px, transparent 1px, transparent 7px);
+	}
+}
